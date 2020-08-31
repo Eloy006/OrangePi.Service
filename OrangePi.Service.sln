@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangePi.Service", "OrangePi.Service\OrangePi.Service.csproj", "{AC8C9A81-ED8F-439A-AC5F-2794B943972D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrangePi.Service", "OrangePi.Service\OrangePi.Service.csproj", "{AC8C9A81-ED8F-439A-AC5F-2794B943972D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.Device.Gpio", "System.Device.Gpio\System.Device.Gpio.csproj", "{7080EEE7-64A6-4974-9649-F482569AB239}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AC8C9A81-ED8F-439A-AC5F-2794B943972D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC8C9A81-ED8F-439A-AC5F-2794B943972D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC8C9A81-ED8F-439A-AC5F-2794B943972D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7080EEE7-64A6-4974-9649-F482569AB239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7080EEE7-64A6-4974-9649-F482569AB239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7080EEE7-64A6-4974-9649-F482569AB239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7080EEE7-64A6-4974-9649-F482569AB239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

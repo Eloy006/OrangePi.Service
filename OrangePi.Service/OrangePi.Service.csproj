@@ -3,7 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <OutputType>Exe</OutputType>
+    <UserSecretsId>676e19c8-ae79-4a7d-9df4-1dc0698b6f0e</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\System.Device.Gpio\System.Device.Gpio.csproj" />
+  </ItemGroup>
 
 
 </Project>
