@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Device.Gpio;
 using System.Device.Gpio.Drivers;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace OrangePi.Service.Controllers
 {
@@ -30,11 +33,16 @@ namespace OrangePi.Service.Controllers
             return Ok();
         }
 
+
         [HttpPost("open")]
-        public IActionResult Open()
+        public async Task<IActionResult> Open()
         {
+            _logger.LogInformation("Begin open");
             _service.Open();
-            _logger.LogInformation("Hello World!");
+            _logger.LogInformation("Wait 1sec"); 
+            await Task.Delay(1000);
+            _logger.LogInformation("close");
+            _service.Close();
 
             return Ok();
         }
