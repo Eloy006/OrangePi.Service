@@ -35,8 +35,13 @@ namespace OrangePi.Service.Controllers
 
 
         [HttpPost("open")]
-        public async Task<IActionResult> Open()
+        public async Task<IActionResult> Open([FromBody()] string pkey)
         {
+            if(pkey!= "d415c65d-f8c8-4640-b65a-9baedce9ed53")
+            {
+                return Problem("Autorization faild");
+            }
+
             _logger.LogInformation("Begin open");
             _service.Open();
             _logger.LogInformation("Wait 1sec"); 
